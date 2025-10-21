@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset basic styyles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: white;
+    background: black;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+
+
+    align-items: center;
+
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+header h1 {
+
+    font-size: 2.5rem;
+
+}
+
+.highlight {
+    color: #fff700;
+}
+
+p {
+    font-size: large;
+}
+
+.btn {
+    background: white;
+    color: #ff0000;
+    padding: 0px 0px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 300;
+    margin-top: -50px;
+    font-size: 1.5rem;
+}
+
+/* Section titles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+/* Projects grid */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    color: #111;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Contact */
+#contact p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Linkedin Button */
+.linkedin-btn {
+    display: inline-block;
+    background: #0077b5;
+    color: white;
+    padding: 1px 2px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.linkedin-btn:hover {
+    background: #005983;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+.email-btn {
+    display: inline-block;
+    background: #25a244;
+    color: white;
+    padding: 1px 2px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.email-btn:hover {
+    background: #1e7c35;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    background: #25d366;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background: #1da851;
+}
+
+.image-section {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-section {
+        margin-top: 30px;
+    }
+}
+    </style>
+</head>
+<body>
+    
+    <!-- Header section -->
+     <header>
+        <div class="image-section">
+      <img src="../../202509__/IMG_0781.JPG" alt="">
+    </div>
+    
+        <h1>Hi, I'm <span class="highlight">Vitus Orazulike</span><p>A Frontend Developer & Creative Designer</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </h1>
+       
+     </header>
+ 
+     <!-- About Section -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I'm passionate about web design and development
+            I build clean, responsive, and user-friendly
+            websites using HTML and CSS.
+        </p>
+      </section>
+
+ 
+
+      <!-- Projects Section -->
+       <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Jumia Front Page Clone</h3>
+                <p>A responsive front page layout inspired
+                    by Jumia, built with HTML & CSS.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Landing Page</h3>
+                <p>A Simple business landing page designed for
+                    mobile and desktop
+                </p>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Design</h3>
+                <p>The site ypu're viewing now - coded
+                    entirely by me!
+                </p>
+            </div>
+        </div>
+       </section>
+
+       <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>+2348164824038</p>
+            <a href="mailto:vitusorazulike@gmail.com" class="email-btn">Send Me an Email</a></p>
+            <a href="https://wa.me/2348164824038" class="whatsapp-btn" target="_blank">Chat on WhatsApp</a>
+            <a href="https://www.linkedin.com/in/chibuike-orazulike-721aa2389" class="linkedin-btn" target="_blank">
+                Connect on Linkedin
+            </a>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Vitus Orazulike - All rights
+                reserved.
+            </p>
+        </footer>
+</body>
+</html>
